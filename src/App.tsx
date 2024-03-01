@@ -8,7 +8,7 @@ import Weather from "./components/Weather";
 import banff from "./assets/images/banff.jpg"
 
 function App() {
-  const api_key = ""
+  const api_key = "" // ENTER YOUR API KEY HERE FROM openweathermap.org
   const cursorRef = React.useRef(null);
   const [dates, setDates] = useState<string[]>([]);
   const [temperature, setTemperature] = useState<number | null>(null);
