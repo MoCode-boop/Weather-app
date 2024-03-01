@@ -1,0 +1,177 @@
+#root {
+  max-width: 1278px;
+  margin: auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+.buttonContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.infoContainer {
+  display: flex;
+  margin-right: 20px;
+  width: 1590px;
+}
+
+.infobox {
+  position: relative;
+  right: 140px;
+  top: 25px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 200px;
+  background-color: #29303b;
+  color: white;
+  z-index: 3;
+  
+}
+
+.weathercontainer {
+  display: flex;
+  margin-top: 3%;
+  max-width: width;
+}
+
+.weatherImageContainer {
+  position: relative;
+  border-radius: 15px; /* Adjust this value as needed */
+  overflow: hidden; /* This will make sure the image also gets rounded corners */
+}
+.weatherImageContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+  border-radius: 15px; /* Adjust this value as needed */
+}
+.weatherContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.weatherText {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlayText {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.additionalText {
+  position: relative;
+  top: -5px;
+  color: white;
+  font-size: 14px; 
+}
+
+.conditionText {
+  position: relative;
+  top: 10px; 
+  color: white;
+  font-size: 18px;
+}
+.weatherbox {
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 0 auto; 
+  width: 1300px;
+  max-width: 1400px;
+  height: 500px;
+  background-color: #29303b;
+  color: white;
+  z-index: 2;
+}
+
+.weatherimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px; /* This will give the image rounded corners */
+}
+
+.weatherImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.infobox:hover {
+  transform: scale(1.1);
+  box-shadow: 2.8px 2.9px 2.2px rgba(0, 0, 0, 0.085),
+    7.6px 7.9px 5.3px rgba(0, 0, 0, 0.097),
+    15.6px 16.1px 10px rgba(0, 0, 0, 0.099),
+    28.6px 29.7px 17.9px rgba(0, 0, 0, 0.097),
+    50.9px 52.8px 33.4px rgba(0, 0, 0, 0.095),
+    84px 87px 80px rgba(0, 0, 0, 0.11);
+}
+.locationImage {
+  position: absolute;
+  top: 13px;
+  left: 35px;
+  width: 23px;
+  height: 35px;
+  z-index: 2;
+}
+
+.btns {
+  display: flex;
+  position: relative;
+  transition: transform 0.2s ease;
+  background-color: #1971ff;
+  color: #ffffff;
+  transition: color 0.2s ease;
+  display: inline-block;
+  width: 256px;
+  height: 60px;
+  border: 0;
+  outline: none;
+  font-size: 1.4rem;
+  z-index: 5;
+  top: 570px;
+  font-size: 1.1rem;
+  padding-left: 30px;
+}
+
+.btns:hover {
+  transform: scale(1.2)
+}
+.App {
+  position: absolute;
+  height: 950px;
+  width: 1910px;
+  overflow: hidden;
+}
+
+
+.cursor {
+  width: 30px;
+  height: 40px;
+  background-color: white;
+  color: white;
+  border-radius: 60%;
+  position: fixed;
+  pointer-events: none;
+  filter: blur(30px);
+  overflow: hidden;
+  z-index: 4;
+}
+
+html, body {
+cursor: none;
+
+}
+
